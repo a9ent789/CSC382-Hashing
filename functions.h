@@ -6,17 +6,24 @@
 #include <iostream>
 #include <string>
 #include <cstring>
-
-//Including the functions file
-#include "functions.cpp"
+#include <cstdlib>
+#include <list>
 
 //keeping me from having to use std::
 using namespace std;
 
-//Declaring functions
-
-//This just runs the menu
-bool runMenu();
-
-//This is the hashing algorithm
-void hashing();
+//This is the class that holds the link list for the hash table.
+class table{
+    //declaring variables for the class.
+    int key;
+    list <string>* hashT;
+public:
+    //this creates the class
+    table(int key);
+    //This inserts the string into the class.
+    void insertS(string d);
+    //this gets the key for the hash.
+    int hashKey(string d);
+    //this displays the hash table
+    void displayTable();
+};

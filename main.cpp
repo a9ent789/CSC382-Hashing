@@ -6,21 +6,18 @@
 #include <iostream>
 #include <string>
 #include <cstring>
+#include <cstdlib>
+#include <list>
 
 //Including the .h file
-#include "functions.h"
+#include "functions.cpp"
 
 //keeping me from having to use std::
 using namespace std;
 
 //This is the main function that runs the program
 int main(){
-    //declaring menu variable
-    bool menu = true;
-    //A while loop that exits when the user wants to exit the program.
-    while(menu){
-        menu = runMenu();
-    }
-    //Returns 0 to the program.
+    menu();
     return 0;
 }
+    
